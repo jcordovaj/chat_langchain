@@ -7,12 +7,14 @@ Este proyecto está diseñado como un ejemplo simple, práctico y educativo para
 
 ## ✨ Overview
 El chatbot permite hacer preguntas sobre el negocio Café Aurora y garantiza que:
+
      ✅ Solo responde con información contenida en el documento fuente
      ❌ No inventa respuestas fuera del contexto (reduce alucinaciones) 
      🤖 Utiliza un pipeline completo de RAG
 
 ## 🧠 ¿Qué es RAG?
 **RAG** (Retrieval-Augmented Generation) combina:
+
      🔍 Recuperación de información relevante desde una base de conocimiento
      🧠 Generación de texto usando un modelo de lenguaje
 
