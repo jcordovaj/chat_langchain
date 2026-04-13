@@ -1,17 +1,17 @@
-☕ Chatbot RAG – Café Aurora
+# ☕ Chatbot RAG – Café Aurora
 Demo práctica de LangChain + FAISS + OpenAI
 
 Chatbot inteligente basado en RAG (Retrieval-Augmented Generation) que responde exclusivamente utilizando información interna de un negocio (en este caso, una cafetería).
 
 Este proyecto está diseñado como un ejemplo simple, práctico y educativo para demostrar cómo construir un sistema completo con LangChain, embeddings, búsqueda vectorial y generación con LLM.
 
-✨ Overview
+## ✨ Overview
 El chatbot permite hacer preguntas sobre el negocio Café Aurora y garantiza que:
      ✅ Solo responde con información contenida en el documento fuente
      ❌ No inventa respuestas fuera del contexto (reduce alucinaciones) 
      🤖 Utiliza un pipeline completo de RAG
 
-🧠 ¿Qué es RAG?
+## 🧠 ¿Qué es RAG?
 **RAG** (Retrieval-Augmented Generation) combina:
      🔍 Recuperación de información relevante desde una base de conocimiento
      🧠 Generación de texto usando un modelo de lenguaje
@@ -47,7 +47,7 @@ El flujo completo es el siguiente:
 7. 🚫 Control de alucinaciones
      - Si no hay información relevante → el bot responde que no sabe
 
-🧱 Stack Tecnológico
+## 🧱 Stack Tecnológico
 Componente	                Tecnología
 LLM	OpenAI                  (GPT-4o-mini)
 Embeddings	                text-embedding-3-small
@@ -106,12 +106,12 @@ Este proyecto busca demostrar de forma clara:
      - Cómo implementar búsqueda semántica con FAISS
      - Cómo integrar un LLM en una aplicación completa
 
-⚠️ Limitaciones
+## ⚠️ Limitaciones
      - Depende completamente del contenido de cafeteria.txt
      - No incluye persistencia avanzada del vector store
      - No optimizado para grandes volúmenes de datos
 
-🔮 Posibles mejoras
+## 🔮 Posibles mejoras
       - Persistencia del índice FAISS
       - Soporte para múltiples documentos
       - UI más avanzada
