@@ -14,13 +14,11 @@ Este proyecto está diseñado como un ejemplo simple, práctico y educativo para
 
 El chatbot permite hacer preguntas sobre el negocio Café Aurora y garantiza que:
 
-    ✅ Solo responde con información contenida en el documento fuente
+    ✅ Sólo responde con información contenida en el documento fuente
 
+    ❌ No inventa respuestas fuera del contexto (reduce alucinaciones)
 
-     ❌ No inventa respuestas fuera del contexto (reduce alucinaciones)
-
-
-     🤖 Utiliza un pipeline completo de RAG
+    🤖 Utiliza un pipeline completo de RAG
 
 ## 🧠 ¿Qué es RAG?
 
@@ -28,8 +26,7 @@ El chatbot permite hacer preguntas sobre el negocio Café Aurora y garantiza que
 
     🔍 Recuperación de información relevante desde una base de conocimiento
 
-
-     🧠 Generación de texto usando un modelo de lenguaje
+    🧠 Generación de texto usando un modelo de lenguaje
 
 En lugar de depender solo del conocimiento del modelo, el sistema consulta datos específicos antes de responder.
 
@@ -100,9 +97,7 @@ La aplicación está diseñada para desplegarse fácilmente en Render, permitien
 
      🌐 Acceso público y pruebas vía web
 
-
      ⚡ Backend Python listo para producción
-
 
      🔐 Uso de variables de entorno (OPENAI_API_KEY)
 
@@ -117,25 +112,17 @@ La aplicación está diseñada para desplegarse fácilmente en Render, permitien
 ## 🧪 Casos de uso
 
     🏪 Chatbots para negocios pequeños
-
-
-     📚 Sistemas de consulta sobre documentos internos
-
-
-     🧾 FAQs inteligentes
-
-
-     🧠 Introducción práctica a RAG
-
-
-     🎯 Objetivo del proyecto
+    📚 Sistemas de consulta sobre documentos internos
+    🧾 FAQs inteligentes
+    🧠 Introducción práctica a RAG
+    🎯 Objetivo del proyecto
 
 Este proyecto busca demostrar de forma clara:
 
     - Cómo funciona RAG en la práctica
-     - Cómo usar LangChain en un caso real
-     - Cómo implementar búsqueda semántica con FAISS
-     - Cómo integrar un LLM en una aplicación completa
+    - Cómo usar LangChain en un caso real
+    - Cómo implementar búsqueda semántica con FAISS
+    - Cómo integrar un LLM en una aplicación completa
 
 ## ⚠️ Limitaciones
 
@@ -159,7 +146,7 @@ Este roadmap extiende el proyecto desde un ejemplo educativo hacia una solución
 
 ---
 
-## 🧪 1. Expandir Casos de Uso
+### 🧪 1. Expandir Casos de Uso
 
 La misma base conceptual de este MVP sirve para llevar el chatbot más allá de una "simple" cafetería:
 
@@ -173,11 +160,11 @@ La misma base conceptual de este MVP sirve para llevar el chatbot más allá de 
 
 ---
 
-## 🧠 2. Memoria Conversacional
+### 🧠 2. Memoria Conversacional
 
-Actualmente el chatbot es _stateless_ , sin embargo, el paso siguiente es hacerlo más natural:
+Actualmente el chatbot es _stateless_, sin embargo, el paso siguiente es hacerlo más natural:
 
-### Mejoras propuestas:
+#### Mejoras propuestas:
 
 - 🗂️ **Memoria de corto plazo**
   - Historial de conversación en sesión
@@ -193,32 +180,35 @@ Actualmente el chatbot es _stateless_ , sin embargo, el paso siguiente es hacerl
 
 ---
 
-## 📚 3. Soporte para Múltiples Fuentes de Datos
+### 📚 3. Soporte para Múltiples Fuentes de Datos
 
 Pasar de un `.txt` a un sistema real de conocimiento mantenible:
 
-### Nuevas fuentes:
+#### Nuevas fuentes:
 
-- 📄 PDFs (manuales, reportes)
-- 🌐 URLs (web scraping controlado)
-- 🧾 Bases de datos internas
-- 📂 Documentos (Word, Markdown)
+📄 PDFs (manuales, reportes)
 
-### Implementación:
+🌐 URLs (web scraping controlado)
+
+🧾 Bases de datos internas
+
+📂 Documentos (Word, Markdown)
+
+#### Implementación:
 
 - Uso de loaders de **LangChain**
 - Pipeline de ingestión:
   - limpieza → chunking → embeddings → indexación
 
-### Mejoras necesarias:
+#### Mejoras necesarias:
 
-- 🔄 **Re-indexación automática** cuando cambian los documentos
+     🔄 **Re-indexación automática** cuando cambian los documentos
 
 👉 Resultado esperado: **RAG dinámico, mantenible, actualizado y especializado por dominios** .
 
 ---
 
-## ⚖️ 4. FAISS vs Vector Databases (Pinecone)
+### ⚖️ 4. FAISS vs Vector Databases (Pinecone)
 
 Consideraciones clave para escalar el sistema:
 
@@ -259,9 +249,9 @@ Consideraciones clave para escalar el sistema:
 
 ---
 
-## 📈 5. Escalar a Producto Comercial
+### 📈 5. Escalar a Producto Comercial
 
-### 🏗️ Arquitectura
+#### 🏗️ Arquitectura
 
 - Backend desacoplado (FastAPI / Node.js)
 - Microservicios:
