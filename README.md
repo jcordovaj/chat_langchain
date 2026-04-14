@@ -2,7 +2,7 @@
 <img width="1200" height="475" alt="GHBanner" src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/enoreyes/langchain-gsp-demo.png" />
 </div>
 
-# ☕ Chatbot RAG – Café Aurora
+# ☕ Chatbot RAG - LangChain – Café Aurora
 
 Demo práctica de LangChain + FAISS + OpenAI
 
