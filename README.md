@@ -331,4 +331,4 @@ Sem-1 2026: MVP
 
 Sem-2 2026: Producción:
 
-> 🚀 Plataforma RAG escalable, multiusuario y lista paZra producción
+> 🚀 Plataforma RAG escalable, multiusuario y lista para producción
